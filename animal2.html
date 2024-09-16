@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Righteous&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="../js/jqueryj.min.js"></script>
+
+  <style>
+    * {
+      padding: 0%;
+      margin: 0%;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Righteous", cursive;
+    }
+
+    p {
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .container1 {
+      width: 100%;
+      float: left;
+      background: #49922d;
+
+    }
+
+    .menu {
+      width: 100%;
+      float: left;
+      position: relative;
+      padding-top: 36px;
+    }
+
+    .left {
+      width: 58%;
+      float: left;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .slide {
+      position: relative;
+    }
+
+    .slide .sl {
+      position: absolute;
+      top: 83px;
+      left: 25px;
+      width: 92%;
+    }
+
+    .right {
+      width: 31%;
+      float: left;
+      color: white;
+      padding: 11px;
+    }
+
+    .right h2 {
+      padding-top: 180px;
+      font-size: 48px;
+    }
+
+    .right h1 {
+      font-size: 76px;
+    }
+
+    .right button {
+      padding: 12px 45px;
+      margin-top: 48px;
+      border: 1px solid white;
+    }
+
+    .right button:hover {
+      background-color: #49922d;
+    }
+
+    .right button:hover a {
+      color: white;
+    }
+
+    .right button a {
+      display: block;
+      font-size: 17px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .plus {
+      width: 90px;
+      height: 90px;
+      background: white;
+      border-radius: 48px;
+      position: absolute;
+      bottom: -42px;
+      text-align: center;
+      left: 600px;
+
+
+    }
+
+    .plus img {
+      margin-top: 37px;
+      width: 18px;
+    }
+
+    .span1 {
+      width: 35px;
+      height: 4px;
+      color: black;
+      background: white;
+      display: block;
+      margin: 7px 0;
+      border-radius: 5px;
+    }
+
+    .span2 {
+      width: 35px;
+      height: 4px;
+      color: black;
+      background: white;
+      display: block;
+      margin: 7px 7px 7px -8px;
+      border-radius: 5px;
+    }
+
+    .span3 {
+      width: 35px;
+      height: 4px;
+      color: black;
+      background: white;
+      display: block;
+      margin: 7px 0;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .logo {
+      position: absolute;
+      top: 10px;
+      left: 24px;
+    }
+
+    .search {
+      position: absolute;
+      top: 10px;
+      right: 24px;
+    }
+
+    .search img {
+      float: left;
+      margin: 27px 16px;
+    }
+
+    .span {
+      float: left;
+      margin: 16px;
+    }
+
+    .container2 {
+      width: 100%;
+      float: left;
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+
+    .container2 h3 {
+      font-size: 32px;
+      padding-top: 38px;
+    }
+
+    .save {
+      width: 80%;
+      margin: auto;
+    }
+
+    .animal {
+      width: 100%;
+      float: left;
+
+    }
+
+    .it {
+      width: 50%;
+      float: left;
+    }
+
+    .it p {
+      line-height: 1.5;
+      color: #2e2d2d;
+      margin-top: 25px;
+      font-size: 18px;
+    }
+
+    .it .buttons {
+      width: 100%;
+      margin-top: 35px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .it .buttons .button1 {
+      padding: 12px 45px;
+      background-color: #49922d;
+      border-style: none;
+    }
+
+    .it .buttons .button2 {
+      padding: 12px 45px;
+      background-color: #2e2d2d;
+      border-style: none;
+    }
+
+    .it .buttons button a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .it .buttons .button1:hover {
+      background-color: white;
+      border: 1px solid #49922d;
+    }
+
+    .it .buttons .button2:hover {
+      background-color: white;
+      border: 1px solid #2e2d2d;
+    }
+
+    .it .buttons button:hover a {
+      color: black;
+    }
+
+    .container3 {
+      width: 100%;
+      float: left;
+    }
+
+    .container3 h3 {
+      font-size: 32px;
+      padding-top: 38px;
+    }
+
+    .container4 {
+      width: 100%;
+      float: left;
+    }
+
+    .container4 .forest {
+      width: 80%;
+      margin: auto;
+    }
+
+    .container4 .forest .long {
+      width: 100%;
+      float: left;
+      text-align: center;
+      margin-top: 120px;
+    }
+
+    .long button {
+      background-color: #2e2d2d;
+      border: 1px solid #2e2d2d;
+      color: white;
+      padding: 12px 45px;
+      font-size: 17px;
+    }
+
+    .long button a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .long button:hover {
+      background-color: white;
+    }
+
+    .long button:hover a {
+      color: black;
+    }
+
+    .long h2 {
+      margin-bottom: 16px;
+      font-size: 32px;
+    }
+
+    .long p {
+      line-height: 1.5;
+      margin-bottom: 36px;
+    }
+
+
+    .container5 {
+      width: 100%;
+      float: left;
+    }
+
+    .container6 {
+      width: 100%;
+      float: left;
+      padding-top: 120px;
+      padding-bottom: 120px;
+      margin-top: 45px;
+      background-image: url(client-bg.jpg);
+      background-size: cover;
+      position: relative;
+    }
+
+    .say {
+      width: 90%;
+      margin: auto;
+    }
+
+    .don {
+      width: 100%;
+      float: left;
+    }
+
+    .don h3 {
+      font-size: 32px;
+      margin-bottom: 48px;
+      color: white;
+    }
+
+    .don .carry {
+      width: 100%;
+      float: left;
+      padding: 36px;
+      border: 1px solid white;
+      color: white;
+    }
+
+    .carry img {
+      float: left;
+      margin-right: 25px;
+    }
+
+    .client {
+      width: 195px;
+      min-width: 195px;
+    }
+
+    .mork {
+      margin-top: 38px;
+    }
+
+    .mork h6 {
+      font-size: 16px;
+    }
+
+    .mork .bus {
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+
+    .mork p {
+      line-height: 1.5;
+    }
+
+    .pl {
+      width: 90px;
+      height: 90px;
+      background: white;
+      border-radius: 48px;
+      position: absolute;
+      bottom: -42px;
+      text-align: center;
+      left: 600px;
+
+
+    }
+
+    .pl img {
+      margin-top: 37px;
+      width: 18px;
+    }
+
+    .container7 {
+      width: 100%;
+      float: left;
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+
+    .request {
+      width: 90%;
+      float: right;
+    }
+
+    .call {
+      width: 100%;
+      float: left;
+    }
+
+    .back {
+      width: 35%;
+      float: left;
+      padding: 0px 36px;
+    }
+
+    .back h3 {
+      font-size: 32px;
+      font-weight: 400;
+      margin-bottom: 48px;
+    }
+
+    .form {
+      width: 100%;
+      float: left;
+    }
+
+
+    .number {
+      width: 100%;
+      float: left;
+      padding: 16px 16px;
+      font-size: 18px;
+      margin: 12px auto;
+    }
+
+    .message {
+      padding: 60px 24px;
+      font-size: 18px;
+      width: 100%;
+      float: left;
+      margin: 12px auto;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .form button {
+      padding: 12px 60px;
+      border-radius: 3px;
+      margin-top: 48px;
+      background-color: #49922d;
+      color: white;
+      font-size: 17px;
+      border: 1px solid #49922d;
+    }
+
+    .form button a {
+      color: white;
+      font-size: 17px;
+    }
+
+    .form button:hover {
+      background-color: white;
+    }
+
+    .form button:hover a {
+      color: #49922d;
+    }
+
+    .iframe {
+      width: 65%;
+      float: left;
+    }
+
+    .container8 {
+      width: 100%;
+      float: left;
+    }
+
+    .our {
+      width: 60%;
+      margin: auto;
+    }
+
+    .sub {
+      width: 100%;
+      float: left;
+    }
+
+    .sub h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+
+    .sub .in {
+      width: 80%;
+      margin: auto;
+    }
+
+    .in input {
+      padding: 16px 16px 16px 16px;
+      width: 100%;
+      margin-top: 48px;
+    }
+
+    .sub button {
+      padding: 12px 60px;
+      margin: 24px;
+      background: #49922d;
+      border: 1px solid #49922d;
+      border-radius: 3px;
+      text-align: center;
+      margin-left: 310px;
+      font-size: 17px;
+      color: white;
+    }
+
+
+    .sub button:hover {
+      background-color: white;
+      color: #49922d;
+    }
+
+    .container9 {
+      width: 100%;
+      float: left;
+      font-family: "Open Sans", sans-serif;
+      padding-bottom: 70px;
+      background-color: #0c2303;
+      color: white;
+      margin-top: 120px;
+      position: relative;
+    }
+
+    .container9 .location {
+      width: 80%;
+      margin: auto;
+    }
+
+    .container9 .location .useful {
+      width: 100%;
+      float: left;
+    }
+
+    .useful .icons {
+      width: 100%;
+      float: left;
+      text-align: center;
+      margin-top: 70px;
+    }
+
+    .many a {
+      color: white;
+    }
+
+    .demo a {
+      color: white;
+    }
+
+    .icon p img {
+      margin: 0px 8px;
+    }
+
+    .for {
+      width: 100%;
+      float: left;
+      margin-top: 70px;
+    }
+
+    .for .demo {
+      width: 33.33%;
+      float: left;
+    }
+
+    .icons p .tw {
+      margin-bottom: 5px;
+    }
+
+    .icons p img {
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+
+    .icons p .you {
+      width: 24px;
+      margin-bottom: 8px;
+    }
+
+    .icons p .insta {
+      width: 32px;
+      margin-bottom: 3px;
+    }
+
+
+
+    .link {
+      width: 100%;
+      float: left;
+      display: flex;
+      gap: 24px;
+      margin-top: 70px;
+    }
+
+    .many {
+      width: 25%;
+      float: left;
+    }
+
+    .there {
+      text-align: center;
+    }
+
+    .many ul li {
+      list-style: none;
+      display: flex;
+      margin: 16px auto;
+    }
+
+    .net {
+      width: 24px;
+      height: 24px;
+      display: block;
+      background: transparent;
+      border-radius: 48px;
+      border: 2px solid white;
+      margin-right: 16px;
+    }
+
+    .net:hover {
+      background-color: greenyellow;
+    }
+
+    .many h3 {
+      margin-bottom: 36px;
+    }
+
+    .animal1 {
+      position: absolute;
+      top: -131px;
+      left: 25px;
+      width: 20%;
+    }
+
+    .animal2 {
+      position: absolute;
+      top: -157px;
+      right: 25px;
+      width: 20%;
+    }
+
+
+    /*jquery start from here*/
+
+    #sc {
+      display: none;
+    }
+
+    @media only screen and (max-width:500px){
+      .logo{width: 85px;}
+      .search img{margin: 18px 16px;}
+      .span .span1{margin: 3px 0;}
+      .span .span2{margin: 7px 7px 7px -8px;}
+      .span .span3{margin: 3px 0;}
+      .right h2 {
+  padding-top: 8px;
+  font-size: 30px;
+}
+.right h1 {
+  font-size: 48px;
+}
+
+.menu{padding-top: 56px;}
+.right{padding: 11px 0px 11px 11px;width: 44%;font-size: 15px;}
+.right button{padding: 12px 18px;}
+.it .buttons .button1 a{font-size: 15px;}
+.it .buttons .button2 a{font-size: 15px;}
+.left{width: 55%;}
+.container2{padding-top: 80px;padding-bottom: 80px;}
+.save{width: 92%;}
+.save .animal .it{width: 100%;margin-top: 16px;}
+.mork {
+  margin-top: 127px;
+}
+
+.back{width: 100%;}
+.iframe{width: 100%;}
+.our{width: 70%;}
+.sub button{margin-left: 76px;}
+
+
+.pl{left: 42%;}
+.plus{left: 36%;}
+.animal1{top: -45px;}
+.animal2{top: -56px;}
+
+.for .demo{width: 100%;margin: 16px 0px;}
+.link{display: block;}
+.link .many{width: 100%;margin-top: 16px;}
+    }
+
+
+ @media only screen and (min-width:401px) and (max-width:500px){
+   .sub button{margin-left: 76px;padding: 12px 36px;}
+ }
+ 
+    @media only screen and (max-width:400px){
+    .sub button {
+  margin-left: 70px;
+  padding: 12px 35px;
+}
+    }
+
+
+@media only screen and (max-width:350px){
+      .left{display: none;}
+      .right{width: 100%;margin-top: 24px;}
+      .search img{display: none;}
+      .right button{margin-bottom: 48px;}
+      .animal1{top:-32px;}
+      .animal2{top: -40px;}
+}
+
+
+
+@media only screen and (min-width:600px) and (max-width:767px)
+{
+  .menu{padding-top: 100px;}
+        .right{width:40%;}
+        .right h2{font-size: 30px;padding-top: 40px;}
+        .right h1{font-size: 58px;}
+        .plus{left: 39%;}
+        .pl{left:42%;}
+        .long button{margin-bottom: 16px;}
+        .it{width: 100%;margin-top: 16px;}
+        .back{width: 100%;margin-bottom: 24px;}
+        .iframe{width: 100%;}
+        .iframe iframe{width: 90%;}
+        .sub button{margin-left: 24%;}
+        .many{width: 50%;float: left;text-align: center;}
+        .link{display: block;}
+        .button{right: 37px;}
+        .button input{padding: 8px 6px 8px 19px;}
+}
+
+
+
+/*jquary start to here*/
+
+.fact{width: 100%;float: left;height: 100vh;background-color: #49922d;position: absolute;
+top: 0px;left: -100%;}
+
+.fact ul {
+  text-align: center;
+  margin-top: 250px;
+}
+
+.fact ul li {
+  padding: 8px 16px;
+  list-style: none;
+  color: white;
+}
+
+.fact ul li a {
+  color: white;
+  font-size: 18px;
+}
+
+.more{
+position: absolute;
+  right: 35px;
+  top: 35px;
+}
+
+.span4 {
+  width: 35px;
+  height: 3px;
+  background: white;
+  display: block;
+  transform: rotate(45deg);
+  
+}
+
+.span5 {
+  width: 35px;
+  height: 3px;
+  background: white;
+  display: block;
+  transform: rotate(-45deg);
+
+}
+
+.button {
+  position: absolute;
+  width: 350px;
+  right: 94px;
+  top: 79px;
+  display: none;
+}
+
+.button input {
+  padding: 8px 70px 8px 19px;
+  font-size: 18px;
+  color: #49922d;
+}
+
+.button button {
+  padding: 8px 21px;
+  background: green;
+  border-style: none;
+  color: white;
+  font-size: 18px;
+}
+
+.button button a{color: white;}
+
+.button button:hover{background-color: #0c2303;}
+
+.saw{float: left;}
+
+  </style>
+</head>
+
+<body>
+  <div class="container1">
+    <div class="menu">
+      <div class="left">
+        <div class="slide">
+          <img src="hero-bg-design.png" alt="">
+          <img src="slider-img.png" alt="" class="sl">
+        </div>
+      </div>
+
+      <div class="right">
+        <h2>SAVE FOREST</h2>
+        <h1>SAVE LIFE</h1>
+        <button><a href="#">DONATE NOW</a></button>
+      </div>
+
+      <div class="plus">
+        <img src="plus.png" alt="">
+      </div>
+    </div>
+
+    <div class="logo">
+      <img src="logo.png" alt="">
+    </div>
+
+    <div class="search">
+     <div class="saw"> <img src="search-icon.png" alt=""></div>
+
+
+      <div class="span">
+        <span class="span1"></span>
+        <span class="span2"></span>
+        <span class="span3"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="fact">
+      <ul>
+        <li><a href="#container1" id="home">Home</a></li>
+        <li><a href="#container4">About</a></li>
+        <li><a href="#container7">Contact</a></li>
+        <li><a href="#container8">Subscribe</a></li>
+      </ul>
+
+      <div class="more">
+            <span class="span4"></span>
+            <span class="span5"></span>
+      </div>
+  </div>
+
+
+  <div class="button">
+    <input type="text" placeholder="Search">
+    <button><a href="#google.com">Go</a></button>
+</div>
+
+
+
+
+
+  <div class="container2">
+    <div class="save">
+      <div class="animal">
+        <div class="it">
+          <h3>Save Animal</h3>
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+            looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+            letters, as opposed to using 'Content here, content here', making it look like </p>
+
+
+          <div class="buttons">
+            <button class="button1"><a href="#">DONATE NOW</a></button>
+            <button class="button2"><a href="#">READ MORE</a></button>
+          </div>
+        </div>
+
+        <div class="it">
+          <img src="animal-img.png" alt="">
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container3">
+    <div class="save">
+      <div class="animal">
+
+        <div class="it">
+          <img src="forest-img.png" alt="">
+        </div>
+
+
+        <div class="it">
+          <h3>Save Animal</h3>
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+            looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+            letters, as opposed to using 'Content here, content here', making it look like </p>
+          <div class="buttons">
+            <button class="button1"><a href="#">DONATE NOW</a></button>
+            <button class="button2"><a href="#">READ MORE</a></button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container4" id="container4">
+    <div class="forest">
+      <div class="long">
+        <h2>About Forest</h2>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking
+          at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+          opposed to using 'Content here, content here', making it look like </p>
+        <button><a href="#">DONATE NOW</a></button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container5">
+    <img src="about-img.jpg" alt="">
+  </div>
+
+
+  <div class="container6">
+    <div class="say">
+      <div class="don">
+        <h3>What says Donators </h3>
+
+        <div class="carry">
+
+          <div class="client">
+            <img src="client.png" alt="">
+          </div>
+
+          <div class="mork">
+            <h6>Carry Mprk</h6>
+            <p class="bus">Business</p>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+              looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+              letters, as opposed to using 'Content here, content here', making it look like </p>
+
+          </div>
+        </div>
+
+        <div class="pl">
+          <img src="plus.png" alt="" class="play">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container7" id="container7">
+    <div class="request">
+      <div class="call">
+        <div class="back">
+          <h3>Request A Call back</h3>
+          <div class="form">
+            <form action="#">
+              <input type="text" placeholder="Full Name" class="number" required="name">
+
+              <input type="email" placeholder="Email" class="number" required="email">
+
+              <input type="number" placeholder="Phone Number" class="number" required="number">
+
+              <input type="text" placeholder="Message" class="message" required="message">
+
+
+              <button><a href="#">SEND</a></button>
+            </form>
+          </div>
+        </div>
+
+        <div class="iframe">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d113873.48985092605!2d75.7825536!3d26.886144!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39136209040212bf%3A0x593380f6a3b8bc78!2sSardarshahar%2C%20Churu%2C%20Rajasthan%20331001!5e0!3m2!1sen!2sin!4v1653982523195!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container8" id="container8">
+    <div class="our">
+      <div class="sub">
+        <h2>Subscribe Our Newsletter</h2>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking
+          at </p>
+
+        <div class="in">
+          <input type="text">
+        </div>
+
+        <button id="sbd">Subscribe</button>
+
+        
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container9">
+    <div class="location">
+      <div class="useful">
+        <div class="icons">
+          <p>
+
+            <img src="fb.png" alt="" class="tw">
+            <img src="twitter.png" alt="" class="tw">
+            <img src="linkedin.png" alt="" class="tw">
+            <img src="instagram.png" alt="" class="insta">
+            <img src="youtube.png" alt="" class="tw you">
+
+          </p>
+        </div>
+
+        <div class="for">
+          <div class="demo">
+            <a href="#">
+              <img src="location.png" alt="">
+              <span class="tion">Location</span>
+            </a>
+          </div>
+
+          <div class="demo">
+            <a href="#">
+              <img src="call.png" alt="">
+              <span class="tion">Call: 1900 99 99</span>
+            </a>
+          </div>
+
+          <div class="demo">
+            <a href="#">
+              <img src="mail.png" alt="">
+              <span class="tion">demo@gmail.com</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="link">
+          <div class="many">
+            <h3>ABOUT</h3>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority havThere are many
+              variations of passages of Lorem Ipsum available, but the majority hav </p>
+
+          </div>
+
+          <div class="many">
+            <h3>Useful Link </h3>
+            <ul>
+              <li><span class="net"></span><a href="#">Home</a></li>
+              <li><span class="net"></span><a href="#">About</a></li>
+              <li><span class="net"></span><a href="#">Donate</a></li>
+              <li><span class="net"></span><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="many there">
+            <h3>FOREST</h3>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority havThere are many
+              variations of passages of Lorem Ipsum available, but the majority hav </p>
+
+          </div>
+
+          <div class="many there">
+            <h3>ANIMAL</h3>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority havThere are many
+              variations of passages of Lorem Ipsum available, but the majority hav </p>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="animal1">
+      <img src="footer-animal1.png" alt="">
+    </div>
+
+
+    <div class="animal2">
+      <img src="footer-animal2.png" alt="">
+    </div>
+  </div>
+
+
+  <script>
+    $('document').ready(function () {
+      alert(1)
+    });
+
+    $('.span4,.span5').click(function(){
+          $('.fact').animate({left:"0%"});
+          
+    });
+
+    $('.span').click(function(){
+      $('.fact').css("left","0%")
+    });
+
+    $('#home').click(function(){
+      $('this').css('z-index','-10')
+    })
+
+    $('#sbd').click(function(){
+        $('#sbd').html('Subscribed')
+    });
+
+
+    $('.saw').click(function(){
+      $('.button').toggle()
+    });
+
+  </script>
+</body>
+
+</html>
+
+   
